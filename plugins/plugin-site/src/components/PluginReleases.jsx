@@ -42,7 +42,7 @@ function PluginReleases({pluginId, versions}) {
                     <div key={version.id} className="item card">
                         <div className="card-header">
                             <h5 className="card-title d-flex justify-content-between">
-                                <div><a href={version.url}>{release.name || version.version}</a></div>
+                                <div><a href={release.htmlURL}>{release.name || version.version}</a></div>
                                 <div>
                                     <TimeAgo date={new Date(version.buildDate)} formatter={formatter}/>
                                 </div>
